@@ -2,6 +2,6 @@
   "needs": [
     "accordion/content",
     "accordion/heading",
-    "accordion/item",
+    "accordion/item"
   ]
 }
