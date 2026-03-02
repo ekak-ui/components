@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --ek-font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+@layer base {
+    @layer base {
+        .font-instrument-sans {
+            font-family: "Instrument Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+        :root {
+            /* LIGHT MODE */
+            --ek-ek-background: 0 0% 100%;
+            --ek-foreground: 222.2 84% 4.9%;
+
+            --ek-card: 0 0% 100%;
+            --ek-card-foreground: 222.2 84% 4.9%;
+
+            --ek-popover: 0 0% 100%;
+            --ek-popover-foreground: 222.2 84% 4.9%;
+
+            --ek-primary: 222.2 47.4% 11.2%;
+            --ek-primary-foreground: 210 40% 98%;
+
+            --ek-secondary: 210 40% 96.1%;
+            --ek-secondary-foreground: 222.2 47.4% 11.2%;
+
+            --ek-muted: 210 40% 96.1%;
+            --ek-muted-foreground: 215.4 16.3% 46.9%;
+
+            --ek-accent: 210 40% 96.1%;
+            --ek-accent-foreground: 222.2 47.4% 11.2%;
+
+            --ek-destructive: 0 84.2% 60.2%;
+            --ek-destructive-foreground: 210 40% 98%;
+
+            --ek-border: 214.3 31.8% 91.4%;
+            --ek-input: 214.3 31.8% 91.4%;
+            --ek-ring: 222.2 84% 4.9%;
+
+            --ek-radius: 0.5rem;
+        }
+    }
+}

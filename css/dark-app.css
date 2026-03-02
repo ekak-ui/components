@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --ek-font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+@layer base {
+    @layer base {
+        .font-instrument-sans {
+            font-family: "Instrument Sans", sans-serif;
+            font-optical-sizing: auto;
+        }
+        :root {
+            /* LIGHT MODE */
+            --ek-ek-background: 0 0% 100%;
+            --ek-foreground: 222.2 84% 4.9%;
+
+            --ek-card: 0 0% 100%;
+            --ek-card-foreground: 222.2 84% 4.9%;
+
+            --ek-popover: 0 0% 100%;
+            --ek-popover-foreground: 222.2 84% 4.9%;
+
+            --ek-primary: 222.2 47.4% 11.2%;
+            --ek-primary-foreground: 210 40% 98%;
+
+            --ek-secondary: 210 40% 96.1%;
+            --ek-secondary-foreground: 222.2 47.4% 11.2%;
+
+            --ek-muted: 210 40% 96.1%;
+            --ek-muted-foreground: 215.4 16.3% 46.9%;
+
+            --ek-accent: 210 40% 96.1%;
+            --ek-accent-foreground: 222.2 47.4% 11.2%;
+
+            --ek-destructive: 0 84.2% 60.2%;
+            --ek-destructive-foreground: 210 40% 98%;
+
+            --ek-border: 214.3 31.8% 91.4%;
+            --ek-input: 214.3 31.8% 91.4%;
+            --ek-ring: 222.2 84% 4.9%;
+
+            --ek-radius: 0.5rem;
+        }
+
+        .dark {
+            /* blue-tinted dark background */
+            --ek-background: 222 47% 8%;
+            --ek-foreground: 210 40% 98%;
+
+            --ek-card: 222 47% 10%;
+            --ek-card-foreground: 210 40% 98%;
+
+            --ek-popover: 222 47% 10%;
+            --ek-popover-foreground: 210 40% 98%;
+
+            /* brighter cool primary */
+            --ek-primary: 210 40% 98%;
+            --ek-primary-foreground: 222 47% 12%;
+
+            /* blue-gray surfaces */
+            --ek-secondary: 217 32% 18%;
+            --ek-secondary-foreground: 210 40% 98%;
+
+            --ek-muted: 217 32% 18%;
+            --ek-muted-foreground: 215 20% 70%;
+
+            --ek-accent: 217 32% 20%;
+            --ek-accent-foreground: 210 40% 98%;
+
+            /* softer destructive (red looks harsh on blue dark) */
+            --ek-destructive: 0 63% 40%;
+            --ek-destructive-foreground: 210 40% 98%;
+
+            /* borders slightly blue */
+            --ek-border: 217 32% 22%;
+            --ek-input: 217 32% 22%;
+
+            /* bluish focus ring */
+            --ek-ring: 215 90% 70%;
+        }
+    }
+}
