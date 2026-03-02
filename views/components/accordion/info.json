@@ -1,8 +1,8 @@
 {
   "needs": [
-    "accordion/content",
-    "accordion/heading",
-    "accordion/item",
-    "accordion/content"
+    "accordion/content:d",
+    "accordion/heading:d",
+    "accordion/item:d",
+    "accordion/content:d"
   ]
 }
