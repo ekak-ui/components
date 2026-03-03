@@ -1,4 +1,4 @@
-export function _ek_accordion({ transition = false, exclusive = false }) {
+function _ek_accordion({ transition = false, exclusive = false }) {
   return {
     transition: transition,
     exclusive: exclusive,
